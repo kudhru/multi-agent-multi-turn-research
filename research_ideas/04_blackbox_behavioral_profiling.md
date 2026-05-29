@@ -226,23 +226,6 @@ The innovation is step 1 — using information-theoretic probe selection instead
 
 ---
 
-## Target Venues and Timeline
-
-| Track | Primary Target | Deadline (est.) | Backup Target |
-|-------|---------------|----------------|---------------|
-| Track A (Websites) | USENIX Security 2027 | October 2026 | CCS 2027 / NDSS 2027 |
-| Track B (AI Models) | NeurIPS 2026 | May 2026 | ICLR 2027 / EMNLP 2026 |
-| Combined | IEEE S&P 2027 | April 2026 | — |
-
-**Recommended strategy:** Start with Track B (faster to execute, lower ethical overhead, publishable by NeurIPS 2026 deadline). Use Track B results to validate the ZKBP framework, then apply to Track A for a follow-up paper with the government website empirical study.
-
-**Estimated time to submission-ready:**
-- Track B only: 10–12 weeks (3 weeks framework design, 2 weeks data collection, 2 weeks analysis, 4–5 weeks writing)
-- Track A only: 16–20 weeks (additional 4–6 weeks for responsible disclosure setup and legal review)
-- Combined: 20–24 weeks
-
----
-
 ## Connection to the Broader Research Agenda
 
 This idea connects directly to three of the other research ideas in this repository:

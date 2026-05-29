@@ -120,21 +120,6 @@ Estimated cost: ~$150–250 in API credits. Feasible in one weekend.
 
 ---
 
-## Target Venue and Timeline
-
-| Target | Deadline (est.) | Fit |
-|--------|----------------|-----|
-| NeurIPS 2026 | May 2026 | AI Safety track; competitive |
-| ACL 2026 | February 2026 | Strong fit for empirical NLP safety paper |
-| EMNLP 2026 | June 2026 | Good backup; safety papers welcome |
-| USENIX Security 2026 | October 2026 (summer cycle) | Good if framed as attack surface measurement |
-
-**Recommended primary target: ACL 2026** — the empirical safety-in-NLP framing fits well, the deadline is achievable, and competition is slightly lower than NeurIPS.
-
-**Estimated time to submission-ready:** 8–10 weeks (2 weeks experiment design + data collection, 2 weeks analysis, 4–6 weeks writing + iteration).
-
----
-
 ## Recommended Positioning
 
 > "We demonstrate that safety alignment erosion is not just an artifact of adversarial attack design — it occurs in completely ordinary multi-turn conversations. Our controlled study, the first to isolate benign conversation depth as the independent variable, shows [X]% degradation in refusal rates across 5 frontier models over 100 turns. Current single-turn safety benchmarks systematically underestimate real-world failure rates by [Y]%."

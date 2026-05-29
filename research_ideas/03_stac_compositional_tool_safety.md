@@ -162,24 +162,6 @@ A compositional safety algebra would let you *statically* (at planning time) det
 
 ---
 
-## Target Venue and Timeline
-
-| Target | Track | Deadline (est.) | Fit |
-|--------|-------|----------------|-----|
-| USENIX Security 2026 (Summer cycle) | A | October 2025 | Strong fit |
-| CCS 2026 | A | January 2026 | Strong fit |
-| IEEE S&P 2027 | B | April 2026 | Ideal for formal theory |
-| NeurIPS 2026 | A | May 2026 | AI Safety track; empirical |
-| NDSS 2027 | A+B | June 2026 | Network and Distributed System Security |
-
-**Recommended primary target for Track A: CCS 2026** — the empirical threat model + defense paper fits CCS's scope, and the timeline is achievable.
-
-**Estimated time to submission-ready:**
-- Track A: 14–16 weeks (4 weeks environment setup, 3 weeks data collection, 3 weeks defense implementation, 4–6 weeks writing)
-- Track B: 20–24 weeks (additional formal theory development and proof checking)
-
----
-
 ## Recommended Positioning
 
 **Track A:**

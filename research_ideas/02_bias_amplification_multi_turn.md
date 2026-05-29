@@ -126,21 +126,6 @@ Estimated cost: ~$300–400 in API credits.
 
 ---
 
-## Target Venue and Timeline
-
-| Target | Deadline (est.) | Fit |
-|--------|----------------|-----|
-| FAccT 2027 | January 2027 | Ideal fit — fairness, accountability, measurement |
-| ACL 2026 | February 2026 | Strong fit; requires fast execution |
-| EMNLP 2026 | June 2026 | Good backup with more time |
-| AIES 2026 | March 2026 | AI Ethics and Society; strong thematic fit |
-
-**Recommended primary target: FAccT 2027 or EMNLP 2026** — FAccT is the highest-prestige venue for this topic. If timeline is tight, EMNLP 2026 is the fallback.
-
-**Estimated time to submission-ready:** 12–14 weeks (3 weeks study design + annotation guidelines, 2 weeks data collection, 2 weeks annotation + analysis, 5–7 weeks writing).
-
----
-
 ## Recommended Positioning
 
 > "We study the user-injection angle of multi-turn bias — not whether models produce biased outputs unprompted, but whether they absorb, amplify, and propagate stereotypes that users introduce. Using a controlled injection-and-propagation paradigm across 5 models and 5 stereotype categories, we find [X]. We extend BBQ, WinoBias, and StereoSet to multi-turn settings for the first time, enabling direct comparison with existing single-turn results. The gap between single-turn fairness scores and deployed multi-turn bias rates is [Y]%."
