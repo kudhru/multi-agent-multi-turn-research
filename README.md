@@ -34,10 +34,8 @@ A comprehensive survey of academic research and industry practices across **13 k
 ├── research_ideas/                  # Proposed research directions with feasibility analysis
 │   ├── 01_safety_alignment_drift.md
 │   ├── 02_bias_amplification_multi_turn.md
-│   └── 03_stac_compositional_tool_safety.md
-│
-├── paper_quality_review/
-│   └── flagged_papers.md            # Quality review: papers flagged for removal or correction
+│   ├── 03_stac_compositional_tool_safety.md
+│   └── 04_blackbox_behavioral_profiling.md  # Zero-knowledge exploration of software & AI models
 │
 └── README.md                        # This file
 ```
