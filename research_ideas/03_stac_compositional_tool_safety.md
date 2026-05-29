@@ -192,11 +192,11 @@ A compositional safety algebra would let you *statically* (at planning time) det
 
 ## Relationship to Research Idea 1
 
-Ideas 1 and 3 together tell a coherent research agenda story for Trustwise:
+Ideas 1 and 3 together tell a coherent research agenda story:
 - Idea 1: safety degrades over time in conversational AI (user-facing)
 - Idea 3: safety operates at the wrong granularity in agentic AI (action-facing)
 
-Both expose the same root cause — **safety mechanisms are designed for single-step, single-turn evaluation but deployed systems operate across sequences** — which positions Trustwise as the company that identified and quantified this gap across both system paradigms.
+Both expose the same root cause — **safety mechanisms are designed for single-step, single-turn evaluation but deployed systems operate across sequences.**
 
 ---
 

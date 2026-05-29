@@ -1,6 +1,6 @@
 # Research Survey: Multi-Turn Conversations & Multi-Agent Systems
 
-A comprehensive survey of academic research and industry practices across **10 key dimensions** for two system paradigms: **multi-turn conversational AI** and **multi-agent AI systems**.
+A comprehensive survey of academic research and industry practices across **13 key dimensions** for two system paradigms: **multi-turn conversational AI** and **multi-agent AI systems**.
 
 > Papers sourced from top-tier venues: NeurIPS, ICML, ICLR, ACL, EMNLP, NAACL, USENIX Security, IEEE S&P, CCS, SOSP, OSDI, USENIX ATC, ASPLOS, WWW, SIGKDD, SIGMOD, VLDB, ICSE, CHI, FAccT, AAAI, IJCAI, ACM Computing Surveys, TACL, and arXiv preprints from leading labs.
 
@@ -22,13 +22,22 @@ A comprehensive survey of academic research and industry practices across **10 k
 │   ├── 09_interpretability.md       # Explainability, transparency
 │   ├── 10_human_ai_interaction.md   # Trust calibration, overreliance
 │   ├── 11_hallucination_and_factuality.md  # Factual grounding, propagation
-│   └── 12_coordination_and_emergence.md    # Emergent coordination behaviors
+│   ├── 12_coordination_and_emergence.md    # Emergent coordination behaviors
+│   └── 13_self_evolving_agents.md          # Self-improvement, alignment drift, misevolution risks
 │
 ├── research_gaps/
 │   └── summary.md                   # 18 prioritized open research problems
 │
 ├── industry_practices/
 │   └── summary.md                   # Best practices from Anthropic, OpenAI, Google, Meta, Microsoft
+│
+├── research_ideas/                  # Proposed research directions with feasibility analysis
+│   ├── 01_safety_alignment_drift.md
+│   ├── 02_bias_amplification_multi_turn.md
+│   └── 03_stac_compositional_tool_safety.md
+│
+├── paper_quality_review/
+│   └── flagged_papers.md            # Quality review: papers flagged for removal or correction
 │
 └── README.md                        # This file
 ```
