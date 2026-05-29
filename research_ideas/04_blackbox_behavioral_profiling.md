@@ -72,16 +72,21 @@ Three specific contributions not in any existing paper:
 
 ## Two Research Tracks
 
-### Track A: Government Website Security Profiling
+### Track A: Public-Sector Website Security Profiling
 
-**Target:** Indian state and local government websites — a high-impact, publicly accessible, systematically under-audited target class.
+**Target:** Government and public-sector websites globally — high-impact, publicly accessible, systematically under-audited systems serving large citizen populations. India's central, state, and local government portals are a concrete primary example, but the framework applies equally to public-sector infrastructure in other countries (e.g., municipal websites in the EU, national service portals in Southeast Asia, e-governance platforms in Africa).
 
-**Why India government websites:**
-- Thousands of portals serving hundreds of millions of citizens
-- Documented patterns of misconfiguration, weak authentication, information disclosure (covered in CERT-In advisories)
-- No prior systematic AI-agent-based security study of this infrastructure
-- Responsible disclosure is feasible: CERT-In coordinates disclosure; many portals have contact channels
-- Cross-portal comparison is valuable: state vs. central vs. local, newer vs. legacy systems
+**Why public-sector websites:**
+- Enormous aggregate surface area — tens of thousands of portals worldwide serving billions of citizens
+- Systematically under-resourced for security: limited budgets, legacy tech stacks, infrequent audits
+- High social impact: vulnerabilities affect citizen data, service access, and public trust
+- Documented patterns across jurisdictions: misconfiguration, weak authentication, information disclosure
+- No prior systematic AI-agent-based security study of this infrastructure class
+- Responsible disclosure is feasible through national CERTs (India's CERT-In, EU's ENISA, US CISA, etc.)
+- Cross-country comparison is scientifically valuable: newer vs. legacy systems, centralized vs. federated architectures, different regulatory contexts
+
+**India as a primary case study:**
+India's e-governance ecosystem is particularly well-suited as a starting point — it spans thousands of central, state, and local portals across a wide maturity spectrum, CERT-In has an established disclosure process, and the scale ensures sufficient sample diversity for statistical claims.
 
 **What the self-evolving agent does:**
 
@@ -107,16 +112,19 @@ Three specific contributions not in any existing paper:
 - Comparison metric: how does this compare to Nuclei/Nikto static scan output?
 
 **Experimental design:**
-- Sample: 30 Indian government portals (10 central, 10 state, 10 local/municipal)
+- Sample: 60 public-sector portals across 3 country tiers:
+  - Tier 1 (primary): 30 Indian government portals (10 central, 10 state, 10 local/municipal)
+  - Tier 2 (comparison): 20 portals from 2–3 other countries (e.g., EU member state municipal sites, Southeast Asian e-gov portals)
+  - Tier 3 (baseline reference): 10 well-maintained public-sector sites (e.g., UK gov.uk, Singapore gov.sg) as upper-bound quality anchors
 - Budget: 500 queries per portal (comparable to a quick manual pen-test)
 - Baselines: (a) Nuclei static scanner, (b) random probing agent, (c) human pen-tester with same time budget
 - Primary metric: **information gain per probe** — how much does each probe reduce uncertainty about the behavioral model?
-- Secondary metrics: vulnerabilities discovered, false positive rate, novel findings vs. baseline
+- Secondary metrics: vulnerabilities discovered, false positive rate, novel findings vs. baseline, cross-country security posture comparison
 
 **Responsible disclosure protocol:**
-- Follow CERT-In coordinated disclosure
+- Follow national CERT coordinated disclosure processes (CERT-In for India, ENISA/national CERTs for EU, etc.)
 - No exploitation of discovered vulnerabilities — discovery and documentation only
-- Report findings to CERT-In 90 days before publication
+- Report findings 90 days before publication; work with respective CERTs on remediation timelines
 
 ### Track B: AI Model Behavioral Profiling
 
@@ -200,7 +208,7 @@ The innovation is step 1 — using information-theoretic probe selection instead
 |---------|------------|-----------|
 | Agent discovers more vulnerabilities than static scanner | 70% | Self-evolving strategy should outperform template-based tools on novel patterns |
 | Finds novel vulnerabilities not in any CVE database | 50% | Government sites are under-audited; novel findings plausible |
-| Clean responsible disclosure process | 80% | CERT-In has an established process; government portals generally receptive |
+| Clean responsible disclosure process | 80% | National CERTs have established processes; multi-country scope spreads disclosure risk |
 | USENIX Security / CCS acceptance | 35–40% | Strong applied security contribution; needs clean empirical result |
 | IEEE S&P / NDSS acceptance | 30–35% | High bar; needs formal framework + strong empirical results |
 
@@ -250,7 +258,7 @@ This idea connects directly to three of the other research ideas in this reposit
 
 ## Recommended Positioning
 
-> "We introduce Zero-Knowledge Behavioral Profiling (ZKBP), a self-evolving exploration paradigm in which an agent starts with no prior knowledge of a target system and autonomously builds a structured behavioral model through information-theoretic probe selection. Applied to Indian government websites, ZKBP discovers [X]% more vulnerabilities than static scanners in the same query budget. Applied to deployed AI models, ZKBP recovers [Y]% of the model's published behavioral specification and discovers [Z] properties absent from public model cards. ZKBP enables scalable third-party AI auditing without access to model weights — addressing a critical regulatory gap under the EU AI Act and emerging national AI governance frameworks."
+> "We introduce Zero-Knowledge Behavioral Profiling (ZKBP), a self-evolving exploration paradigm in which an agent starts with no prior knowledge of a target system and autonomously builds a structured behavioral model through information-theoretic probe selection. Applied to 60 public-sector websites across India, the EU, and Southeast Asia, ZKBP discovers [X]% more vulnerabilities than static scanners in the same query budget and enables the first systematic cross-country comparison of government web security posture. Applied to deployed AI models, ZKBP recovers [Y]% of the model's published behavioral specification and discovers [Z] properties absent from public model cards. ZKBP enables scalable third-party AI auditing without access to model weights — addressing a critical regulatory gap under the EU AI Act and emerging national AI governance frameworks."
 
 ---
 
